@@ -28,6 +28,9 @@ export function Header() {
             <Link href="/" className="text-foreground hover:text-primary transition text-sm lg:text-base">
               {t.nav.home}
             </Link>
+ <Link href="/car-damage" className="text-foreground hover:text-primary transition text-sm lg:text-base">
+            Car Damage
+          </Link>
             <Link href="/services" className="text-foreground hover:text-primary transition text-sm lg:text-base">
               {t.nav.services}
             </Link>
@@ -40,9 +43,7 @@ export function Header() {
             <Link href="/contact" className="text-foreground hover:text-primary transition text-sm lg:text-base">
               {t.nav.contact}
             </Link>
-            <Link href="/car-damage" className="text-foreground hover:text-primary transition text-sm lg:text-base">
-            Car Damage
-          </Link>
+           
           </nav>
 
           {/* Right side - Language switcher and contact icons */}
@@ -108,6 +109,13 @@ export function Header() {
             >
               {t.nav.home}
             </Link>
+<Link
+      href="/car-damage"
+      className="block px-4 py-2 text-foreground hover:text-primary hover:bg-muted rounded transition"
+      onClick={() => setIsMenuOpen(false)}
+    >
+      Car Damage
+    </Link>
             <Link
               href="/services"
               className="block px-4 py-2 text-foreground hover:text-primary hover:bg-muted rounded transition"
@@ -136,13 +144,7 @@ export function Header() {
             >
               {t.nav.contact}
             </Link>
-            <Link
-      href="/car-damage"
-      className="block px-4 py-2 text-foreground hover:text-primary hover:bg-muted rounded transition"
-      onClick={() => setIsMenuOpen(false)}
-    >
-      Car Damage
-    </Link>
+            
     {/* OR if you want it translated like the others: */}
     {/* {t.nav.carDamage || "Car Damage"} */}
             {/* Mobile Contact Icons */}
